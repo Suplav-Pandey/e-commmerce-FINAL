@@ -13,7 +13,7 @@ const AdminNavber = (props) => {
 
   return (
     <Fragment>
-      <nav className="sticky z-10 flex items-center shadow-md justify-between px-4 py-4 md:px-8 top-0 w-full bg-white">
+      <nav style={{ background: "#303031", color: "#87898A" }} className="sticky z-10 flex items-center shadow-md justify-between px-4 py-4 md:px-8 top-0 w-full bg-white">
         {/*  Large Screen Show  */}
         <div className="hidden lg:block lg:flex lg:items-center lg:space-x-4 mr-32">
           <span>
@@ -37,10 +37,10 @@ const AdminNavber = (props) => {
         <div className="hidden lg:block">
           <span
             onClick={(e) => history.push("/admin/dashboard")}
-            style={{ letterSpacing: "0.70rem" }}
+            style={{ letterSpacing: "0.70rem" ,color: "#FF00FF" }}
             className="flex items-left text-center font-bold uppercase text-gray-800 text-2xl cursor-pointer px-2 text-center"
           >
-            Hayroo
+            MERN E-Commerce
           </span>
         </div>
         {/* Small Screen Show */}
@@ -62,10 +62,10 @@ const AdminNavber = (props) => {
           </svg>
           <span
             onClick={(e) => history.push("/admin/dashboard")}
-            style={{ letterSpacing: "0.10rem" }}
+            style={{ letterSpacing: "0.10rem" ,color: "#FF00FF"  }}
             className="flex items-left text-center font-bold uppercase text-gray-800 text-2xl cursor-pointer px-2 text-center"
           >
-            Hayroo
+            MERN E-Commerce
           </span>
         </div>
         {/* Both Screen show */}

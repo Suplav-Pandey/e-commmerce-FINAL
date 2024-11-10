@@ -30,22 +30,22 @@ const Navber = (props) => {
   return (
     <Fragment>
       {/* Navber Section */}
-      <nav className="fixed top-0 w-full z-20 shadow-lg lg:shadow-none bg-white">
+      <nav style={{ background: "#303031", color: "#87898A" }} className="fixed top-0 w-full z-20 shadow-lg lg:shadow-none bg-white">
         <div className="m-4 md:mx-12 md:my-6 grid grid-cols-4 lg:grid-cols-3">
           <div className="hidden lg:block col-span-1 flex text-gray-600 mt-1">
-            <span
+            <span style={{color: "#FFD700"}}
               className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
               onClick={(e) => history.push("/")}
             >
               Shop
             </span>
-            <span
+            <span style={{color: "#FFD700"}}
               className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
               onClick={(e) => history.push("/blog")}
             >
               Blog
             </span>
-            <span
+            <span style={{color: "#FFD700"}}
               className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
               onClick={(e) => history.push("/contact-us")}
             >
@@ -73,15 +73,15 @@ const Navber = (props) => {
               style={{ letterSpacing: "0.10rem" }}
               className="flex items-left text-center font-bold uppercase text-gray-800 text-2xl cursor-pointer px-2 text-center"
             >
-              Hayroo
+              MERN E-Commerce
             </span>
           </div>
           <div
             onClick={(e) => history.push("/")}
-            style={{ letterSpacing: "0.70rem" }}
+            style={{ letterSpacing: "0.70rem" ,color: "#FF00FF" }}
             className="hidden lg:block flex items-left col-span-1 text-center text-gray-800 font-bold tracking-widest uppercase text-2xl cursor-pointer"
           >
-            Hayroo
+            MERN E-Commerce
           </div>
           <div className="flex items-right col-span-2 lg:col-span-1 flex justify-end">
             {/*  WishList Page Button */}
